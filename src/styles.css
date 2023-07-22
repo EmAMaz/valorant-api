@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Valorant-Font;
+    src: url('/assets/fonts/Valorant-Font.ttf');
+}
+*{
+    font-family: Valorant-Font;
+}
+.link-show{
+    transition: 150ms ease-in;
+}
+.link-show:hover{
+    transform: translateY(-4px);
+}

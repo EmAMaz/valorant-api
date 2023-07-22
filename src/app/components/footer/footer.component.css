@@ -1,0 +1,10 @@
+.container__enlaces-footer{
+    display: flex;
+    justify-content: center;
+}
+.enlaces__home{
+    display: flex;
+    justify-content: center;
+    width: 3em;
+    height: 2em;
+}

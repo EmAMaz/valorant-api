@@ -1,0 +1,15 @@
+
+<div class="container-fluid container_main position-relative">
+    <app-navbar></app-navbar>
+    <div class="row grid gap-5 justify-content-center container_cards" style="padding: 3em;">  
+        <div class="card col-sm-3 g-col-4 card_edit" *ngFor="let item of data">
+                <img src={{item.displayIcon}} class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">{{item.displayName}}</h5>
+                <p class="card-text">{{item.description}}</p>
+                </div>
+                <div class="card-footer">
+                </div>
+        </div>
+    </div>
+</div>

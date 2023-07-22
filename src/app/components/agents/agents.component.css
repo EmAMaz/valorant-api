@@ -1,0 +1,18 @@
+*{
+    font-family: Valorant-Font;
+}
+.container_main{
+    background-image: url("/assets/kethaka-vidyananda-1.jpg");
+    background-size: cover;
+    background-repeat: round;
+    padding: 0 10em;
+}
+.card_edit{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    background-color: #ddddddc2;
+}
+.card_edit img{
+    transform: scale(0.7);
+    border-radius: 100%;
+}
