@@ -2,7 +2,7 @@
     --animate-delay: 0.5s;
 }
 .container_main{
-    background-image: url("/assets/kethaka-vidyananda-1.jpg");
+    background-image: url("assets/kethaka-vidyananda-1.jpg");
     padding: 0 10em;
 }
 .container__main-home{
