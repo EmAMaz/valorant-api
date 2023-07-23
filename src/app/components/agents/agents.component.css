@@ -2,7 +2,7 @@
     font-family: Valorant-Font;
 }
 .container_main{
-    background-image: url("/assets/kethaka-vidyananda-1.jpg");
+    background-image: url("../../../assets/kethaka-vidyananda-1.jpg");
     background-size: cover;
     background-repeat: round;
     padding: 0 10em;
