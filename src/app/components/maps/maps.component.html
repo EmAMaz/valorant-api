@@ -1,9 +1,13 @@
 
-<div class="container-fluid container_main position-relative">
-    <!-- <img src="./assets/kethaka-vidyananda-1.jpg" alt="" class="imgBackground"> -->
-    <app-navbar></app-navbar>
+<div class="container-fluid container_main position-relative min-vh-100">
+    <div class="container d-flex align-items-center justify-content-between border-bottom border-1" style="padding: 8em 0 0.5em 0;">
+        <app-navbar></app-navbar>
+        <form class="d-flex">
+            <input class="form-control me-sm-2" type="text" placeholder="Search..." [(ngModel)]="filterPost" name="filterPost">
+        </form>
+    </div>
     <div class="row grid gap-5 justify-content-center container_cards" style="padding: 3em;">  
-        <div class="card col-sm-3 g-col-4 card_edit" *ngFor="let item of data">
+        <div class="card col-sm-3 g-col-4 card_edit" *ngFor="let item of data | filter: filterPost">
                 <img src={{item.displayIcon}} class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">{{item.displayName}}</h5>

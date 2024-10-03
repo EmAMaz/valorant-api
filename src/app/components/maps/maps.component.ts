@@ -11,7 +11,7 @@ export class MapsComponent {
   bolean: any;
   
   constructor(private apiService: ApiServiceMaps){}
-  
+  filterPost = "";
   ngOnInit():void{
     this.llenarData();
   }

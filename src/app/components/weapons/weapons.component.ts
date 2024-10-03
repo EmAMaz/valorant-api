@@ -11,7 +11,7 @@ export class WeaponsComponent {
   bolean: any;
   
   constructor(private apiService: ApiServiceWeapons){}
-  
+  filterPost = "";
   ngOnInit():void{
     this.llenarDataWeapons();
   }

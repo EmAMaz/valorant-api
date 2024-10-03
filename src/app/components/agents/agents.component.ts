@@ -11,7 +11,7 @@ export class AgentsComponent {
   bolean: any;
   
   constructor(private apiService: ApiService){}
-  
+  filterPost = "";
   ngOnInit():void{
     this.llenarData();
   }
