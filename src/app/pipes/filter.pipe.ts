@@ -11,7 +11,6 @@ export class FilterPipe implements PipeTransform {
     if (validacion.test(arg)) return value;
     for (const post of value) {
       if (post.displayName.toLowerCase().indexOf(arg.toLowerCase()) > -1) {
-        console.log(arg);
         resultPosts.push(post);
       }
     }

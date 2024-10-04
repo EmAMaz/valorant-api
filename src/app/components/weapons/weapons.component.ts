@@ -17,7 +17,7 @@ export class WeaponsComponent {
   }
 
   llenarDataWeapons(){
-    this.apiService.getDataWeapons().subscribe(data=>{
+    this.apiService.getDataWeapons("weapons").subscribe(data=>{
       this.data = data.data;
     })
   }

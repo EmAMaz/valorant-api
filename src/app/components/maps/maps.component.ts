@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiServiceMaps } from 'src/app/service/apiMaps.Service';
 
 @Component({
@@ -6,7 +6,7 @@ import { ApiServiceMaps } from 'src/app/service/apiMaps.Service';
   templateUrl: './maps.component.html',
   styleUrls: ['./maps.component.css']
 })
-export class MapsComponent {
+export class MapsComponent implements OnInit {
   data: any[] = [];
   bolean: any;
   
@@ -17,7 +17,7 @@ export class MapsComponent {
   }
 
   llenarData(){
-    this.apiService.getDataMaps().subscribe(data=>{
+    this.apiService.getDataMaps("maps").subscribe(data=>{
       this.data = data.data;
     })
   }

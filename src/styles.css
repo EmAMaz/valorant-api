@@ -2,12 +2,42 @@
     font-family: Valorant-Font;
     src: url('assets/fonts/Valorant-Font.ttf');
 }
+:root{
+    --bg-card: #ddddddc2;
+}
 *{
     font-family: Valorant-Font;
+}
+.bg_card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--bg-card);
 }
 .link-show{
     transition: 150ms ease-in;
 }
 .link-show:hover{
     transform: translateY(-4px);
+}
+.container__main-home{
+    min-height: 100vh;
+    text-align: center;
+    background: rgb(98,166,158);
+    background: linear-gradient(90deg, rgba(98,166,158,1) 0%, rgba(121,149,146,1) 30%, rgba(156,92,113,1) 100%);
+}
+.card_edit{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.card_agent_img{
+    transform: scale(0.7);
+    border-radius: 100%;
+}
+.card-footer{
+    background-color: transparent;
+}
+.card-body{
+    max-height: min-content;
 }
