@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiServiceWeapons } from 'src/app/service/apiWeapons.service';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-weapons',
@@ -10,7 +10,7 @@ export class WeaponsComponent {
   data: any[] = [];
   bolean: any;
   
-  constructor(private apiService: ApiServiceWeapons){}
+  constructor(private apiService: ApiService){}
   filterPost = "";
   ngOnInit():void{
     this.llenarDataWeapons();

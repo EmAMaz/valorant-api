@@ -12,9 +12,40 @@ export class ApiService {
 
   constructor(private http: HttpClient, private storageService: StorageService) {}
 
-  public getData(endpoint: string): Observable<any> {
+  public getDataAgents(endpoint: string): Observable<any> {
     const storageData = this.storageService.getItem(endpoint)
     
+    if (storageData) {
+      return of(storageData);
+    } else {
+      return this.http
+        .get(environment.apiUrl + `${endpoint}`)
+        .pipe(
+          tap((data) =>
+            localStorage.setItem(endpoint, JSON.stringify(data))
+          )
+        );
+    }
+  }
+
+  public getDataMaps(endpoint: string): Observable<any> {
+    const storageData = this.storageService.getItem(endpoint);
+    if (storageData) {
+      return of(storageData);
+    } else {
+      return this.http
+        .get(environment.apiUrl + `${endpoint}`)
+        .pipe(
+          tap((data) =>
+            localStorage.setItem(endpoint, JSON.stringify(data))
+          )
+        );
+    }
+  }
+
+  public getDataWeapons(endpoint: string):Observable<any>{
+    const storageData = this.storageService.getItem(endpoint);
+
     if (storageData) {
       return of(storageData);
     } else {

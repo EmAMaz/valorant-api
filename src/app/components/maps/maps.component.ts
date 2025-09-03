@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiServiceMaps } from 'src/app/service/apiMaps.Service';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-maps',
@@ -10,7 +10,7 @@ export class MapsComponent implements OnInit {
   data: any[] = [];
   bolean: any;
   
-  constructor(private apiService: ApiServiceMaps){}
+  constructor(private apiService: ApiService){}
   filterPost = "";
   ngOnInit():void{
     this.llenarData();

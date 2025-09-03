@@ -6,17 +6,20 @@
             <input class="form-control me-sm-2" type="text" placeholder="Search..." [(ngModel)]="filterPost" name="filterPost">
         </form>
     </div>
-    <div class="row grid gap-5 justify-content-center container_cards" style="padding: 3em;">  
-        <div class="card col-sm-3 g-col-4 bg_card" *ngFor="let item of data | filter:filterPost">
-                <div class="card_edit">
-                    <img src={{item.displayIcon}} class="card_agent_img" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">{{item.displayName}}</h5>
-                    <p class="card-text">{{item.description}}</p>
+    
+    <div class="container text-container">
+        <div class="row" style="padding: 3em;">
+            <div class="col-4 pt-3 border border-0 bg_card" *ngFor="let item of data | filter:filterPost">
+                    <div class="card_edit p-3">
+                        <img src={{item.displayIcon}} class="card_agent_img" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">{{item.displayName}}</h5>
+                        <p class="card-text">{{item.description}}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-footer">
-                </div>
+                    <div class="card-footer">
+                    </div>
+            </div>
         </div>
     </div>
 </div>

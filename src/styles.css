@@ -9,8 +9,8 @@
     font-family: Valorant-Font;
 }
 .bg_card{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: var(--bg-card);
+    background-color: transparent;
+    border-width: 0px!important;
 }
 .link-show{
     transition: 150ms ease-in;
@@ -30,7 +30,14 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--bg-card);
 }
+.card_edit > img{
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.85);
+} 
 .card_agent_img{
     transform: scale(0.7);
     border-radius: 100%;

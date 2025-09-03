@@ -17,7 +17,7 @@ export class AgentsComponent {
   }
 
   llenarData(){
-    this.apiService.getData("agents").subscribe(data=>{
+    this.apiService.getDataAgents("agents").subscribe(data=>{
       this.data = data.data;
     })
   }
